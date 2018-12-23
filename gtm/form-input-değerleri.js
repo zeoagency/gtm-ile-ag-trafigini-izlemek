@@ -12,8 +12,7 @@ function () {
 				contactPreference = button.getAttribute('value');
 			}
 		})
-		return 
-			[
+		return [
 				['name=', name],
 				['company=', company],
 				['email=', email],
@@ -21,7 +20,7 @@ function () {
 				['cpref=', contactPreference]
 			]
 			.map(function(param) {return param.join('')})
-			.join('&')
+			.join('&');
 	} catch (e) {
 		return false;
 	}
