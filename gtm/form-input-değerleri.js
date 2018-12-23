@@ -2,12 +2,12 @@
 
 function () {
   try {
-    var name = document.querySelector('input[name="your-name"]').value;
-    var company = document.querySelector('input[name="your-company"]').value;
-    var email = document.querySelector('input[name="your-email"]').value;
-    var phone = document.querySelector('input[name="your-phone"]').value;
-    var contactButtons = document.querySelectorAll('input[name="iletisim-tercihi"]');
-    var contactPreference = 'Phone';
+    var name = document.querySelector('input[name="your-name"]').value
+      , company = document.querySelector('input[name="your-company"]').value
+      , email = document.querySelector('input[name="your-email"]').value
+      , phone = document.querySelector('input[name="your-phone"]').valu;
+      , contactButtons = document.querySelectorAll('input[name="iletisim-tercihi"]')
+      , contactPreference = 'Phone';
     [].forEach.call(contactButtons, function(button) {
       if (button.getAttribute('checked') === 'checked') {
         contactPreference = button.getAttribute('value');
