@@ -12,7 +12,7 @@ function () {
 				contactPreference = button.getAttribute('value');
 			}
 		})
-		return encodeURIComponent(
+		return 
 			[
 				['name=', name],
 				['company=', company],
@@ -21,7 +21,7 @@ function () {
 				['cpref=', contactPreference]
 			]
 			.map(function(param) {return param.join('')})
-			.join('&'))
+			.join('&')
 	} catch (e) {
 		return false;
 	}
