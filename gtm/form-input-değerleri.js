@@ -1,4 +1,4 @@
-//--------- Örnek script.
+//------------- Örnek script.
 function () {
 	try {
 		var name = document.querySelector('input[name="your-name"]').value;
