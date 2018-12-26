@@ -8,7 +8,7 @@ function () {
       , phone = document.querySelector('input[name="your-phone"]').valu;
       , contactButtons = document.querySelectorAll('input[name="iletisim-tercihi"]')
       , contactPreference = 'Phone';
-    [].forEach.call(contactButtons, function(button) {
+    Array.prototype.forEach.call(contactButtons, function(button) {
       if (button.getAttribute('checked') === 'checked') {
         contactPreference = button.getAttribute('value');
       }
