@@ -1,5 +1,4 @@
-//------------- Örnek Custom javascript
-
+//------------- Örnek Custom JavaScript değişkeni.
 function () {
   try {
     var name = document.querySelector('input[name="your-name"]').value
