@@ -5,7 +5,7 @@ function () {
     var name = document.querySelector('input[name="your-name"]').value
       , company = document.querySelector('input[name="your-company"]').value
       , email = document.querySelector('input[name="your-email"]').value
-      , phone = document.querySelector('input[name="your-phone"]').valu;
+      , phone = document.querySelector('input[name="your-phone"]').value
       , contactButtons = document.querySelectorAll('input[name="iletisim-tercihi"]')
       , contactPreference = 'Phone';
     Array.prototype.forEach.call(contactButtons, function(button) {
