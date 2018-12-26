@@ -1,6 +1,6 @@
 //------------------- Örnek Apps Script makro.
 function doGet(e) {
-  try	{
+  try {
     var eventData = _getParams(e);
     _insertNewRow(eventData);
     return HtmlService.createHtmlOutput(eventData.join(' '));
