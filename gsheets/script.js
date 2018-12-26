@@ -5,6 +5,7 @@ function doGet(e) {
     _insertNewRow(eventData);
     return HtmlService.createHtmlOutput(eventData.join(' '));
   } catch (e) {
+    // @TODO: Bildirim ekle. -Örn email-
     return HtmlService.createHtmlOutput('Error occured:', e.toString());
   }
 }
