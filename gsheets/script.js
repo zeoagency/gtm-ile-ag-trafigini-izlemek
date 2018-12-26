@@ -11,11 +11,11 @@ function doGet(e) {
 }
 
 //----------------------------------------------//
-function _getParams(response) {
+function _getParams(request) {
   //----------------------------------------------//
   // Param list: name, company, email, phone, cpref, clid
   //----------------------------------------------//
-  var params = response.parameter
+  var params = request.parameter
     , name = params["name"]
     , company = params['company']
     , email = params["email"]
