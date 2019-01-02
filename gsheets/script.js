@@ -3,10 +3,10 @@ function doGet(e) {
   try {
     var eventData = _getParams(e);
     _insertNewRow(eventData);
-    return HtmlService.createHtmlOutput(eventData.join(' '));
+    return HtmlService.createHtmlOutput(eventData[0].join(' '));
   } catch (e) {
     // @TODO: Bildirim ekle. -Örn email-
-    return HtmlService.createHtmlOutput('Error occured:', e.toString());
+    return HtmlService.createHtmlOutput('Error occured: ' + e.toString());
   }
 }
 
