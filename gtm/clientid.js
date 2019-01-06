@@ -6,6 +6,7 @@ function () {
     }).filter(function(item, pos, self) {
       return self.indexOf(item) === pos;
     }).join(';');
-  } catch(e) {}  
-  return 'na';
+  } catch(e) {
+    return 'na';
+  }  
 }
