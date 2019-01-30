@@ -3,8 +3,8 @@ function () {
     var trackers = ga.getAll();
     return trackers.map(function(tracker) {
       return tracker.get('clientId')
-    }).filter(function(item, pos, self) {
-      return self.indexOf(item) === pos;
+    }).filter(function(x, y, z) {
+      return z.indexOf(x) === y;
     }).join(';');
   } catch(e) {
     return 'na';
